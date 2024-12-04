@@ -1,0 +1,276 @@
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width:576px) {
+    .container {
+         
+            padding: 25px 25px;
+            display: flex;
+}
+.menu ul {
+    list-style: none;
+    display: block;
+    color: gray;
+
+
+}
+
+
+
+li:hover a::before {
+    width: 0px;
+    
+}
+#home{
+padding: 100px 0px 20px;
+}
+
+.containere{
+   
+    flex-direction: column-reverse;
+padding: 30px;
+    
+  
+}
+.btn-group{
+    
+    justify-content: center;
+    
+  
+}
+
+.containere .content-home{
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+
+.containere h2 {
+  
+   
+    margin-top: 0px;
+   
+}
+
+#chefs {
+    padding: 50px 0px;
+}
+.contain {
+    padding: 0px 25px;
+    text-align: center;
+}
+
+
+.card {
+    width: 90%;
+   margin-bottom: 20px;
+  
+}
+.card:hover .chef-social {
+    transform: translateX(270px); 
+}
+
+.card .chef-social {
+
+    transform: translateX(400px);
+}
+
+
+
+
+
+
+.som-contact .edit{
+    width: 100%;
+}
+#contact form div {
+    flex-wrap: wrap;
+}
+
+#contact form div input{
+    width: 100%;
+   
+}
+
+
+#contact form textarea {
+
+    min-height: 75px;
+
+}
+
+.footer .contain {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.footer .about {
+    width: 75%;
+}
+
+.footer .subscription {
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contact-details {
+    width: 100%;
+    padding: 20px 0px;
+
+}
+}
+
+
+ /*Medium devices (tablets, 768px and up)*/
+/*@media (max-width: 768px) {
+    .container {
+    
+            padding: 0px 25px;
+            display: flex;
+        }
+    
+        .menu ul {
+            list-style: none;
+            display: block;
+            color: gray;
+    
+    
+        }
+    
+    
+    
+        li:hover a::before {
+            width: 0px;
+    
+        }
+    
+       
+        
+        .containere {
+    
+            flex-direction: column-reverse;
+            padding: 30px;
+    
+    
+        }
+    
+        .containere .content-home {
+            width: 100%;
+        } 
+    
+      
+  
+        #chefs {
+            padding: 50px 0px;
+        
+        
+        }
+    
+        .contain {
+            padding: 0px 25px;
+            text-align: center;
+        }
+    
+    
+        .card {
+            width: 45%;
+            margin-bottom: 20px;
+            column-gap: 10px;
+        }
+    
+        .card:hover .chef-social {
+            transform: translateX(220px);
+        }
+    
+        .card .chef-social {
+    
+            transform: translateX(400px);
+        }
+    
+    
+    
+    
+        .contain .gallery-cards {
+    
+            columns: 3 250px;
+    
+    
+        }
+    
+        .g-card {
+            width: 250px;
+    
+        }
+     
+    
+       
+    
+       
+       
+    
+    
+        #contact form textarea {
+    
+            min-height: 75px;
+    
+        }
+    
+        .footer .contain {
+            display: flex;
+            flex-wrap: wrap;
+    
+        }
+    
+        .footer .about {
+            width: 50%;
+        }
+    
+        .footer .subscription {
+            width: 100%;
+            margin-top: 10px;
+    
+        }
+    
+        .contact-details {
+            width: 100%;
+            padding: 20px 0px;
+            order: 1;
+    
+        }
+}
+/*
+/* Large devices (desktops, 992px and up)*/
+/*@media (max-width: 892px) {
+    #chefs {
+            padding: 50px 0px;
+
+        }
+    
+        .contain {
+            padding: 0px 25px;
+            text-align: center;
+        }
+  
+    
+        .contain .gallery-cards {
+    
+            columns: 3 200px;
+    
+    
+        }
+    
+        .g-card {
+            width: 230px;
+    
+        }
+} */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    ...
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    ...
+} */

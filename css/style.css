@@ -1,0 +1,1022 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+.nav-bar {
+    z-index: 99999;
+    position: fixed;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo h2::after,
+div .logoo::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: hsl(0, 84%, 44%);
+    position: absolute;
+    top: 70%;
+    right: -3%;
+
+
+}
+
+.container {
+    padding: 17px 75px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: small;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 1px 1px 1px 0px rgb(185, 185, 185);
+}
+
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    color: gray;
+
+
+}
+
+.container a,
+.containere a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.menu li {
+    padding: 5px;
+
+}
+
+
+
+.menu .colo {
+    color: rgb(136, 136, 136);
+    transition: all 0.2s;
+    padding-bottom: 3px;
+
+}
+
+
+.onee:hover,
+.two:hover,
+.three:hover,
+.four:hover {
+    color: #000;
+
+}
+
+.menu .colo:hover li {
+    color: black;
+
+}
+
+
+.menu ul {
+    position: relative;
+}
+
+li:hover a::before {
+    width: 40px;
+    transform: translateX(55);
+    background-color: rgb(162, 12, 12);
+}
+
+li .onee::before {
+    content: "";
+    width: 0px;
+    height: 1.5px;
+    position: absolute;
+    top: 95%;
+    left: 0%;
+    background-color: #000;
+    transition: all 0.5s;
+}
+
+li .two::before {
+    content: "";
+    width: 0px;
+    height: 1.5px;
+
+    position: absolute;
+    top: 95%;
+    left: 25%;
+    background-color: #000;
+
+    transition: all 0.5s;
+}
+
+li .three::before {
+    content: "";
+    width: 0px;
+    height: 1.5px;
+
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    background-color: #000;
+
+    transition: all 0.5s;
+}
+
+li .four::before {
+    content: "";
+    width: 0px;
+    height: 1.5px;
+
+    position: absolute;
+    top: 95%;
+    left: 75%;
+    background-color: #000;
+
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+.containere {
+    background-color: rgb(239, 236, 236);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px;
+    padding-bottom: 25px;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    color: rgb(43, 40, 40);
+
+}
+
+.containere h2 {
+    font-family: "Amatic SC", "Inter",
+        sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+
+}
+
+.containere p {
+
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+
+
+.containere .content-home {
+
+    width: 40%;
+}
+
+.containere .home-image {
+    width: 40%;
+    overflow: hidden;
+}
+
+.home-image img {
+    width: 100%;
+
+
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.home-image img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+
+
+}
+
+
+#x {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+
+.mood {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 2px;
+    border: rgb(198, 198, 198) solid 1px;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.fa-moon {
+    position: absolute;
+    top: -15px;
+    left: 5;
+}
+
+.fa-sun {
+    color: goldenrod;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+}
+
+:root:has(.mode:checked) .nav-bar .container .fa-moon {
+    top: 4px;
+    left: 2px;
+    transition: all 1s;
+
+}
+
+:root:has(.mode:checked) .nav-bar li:hover a::before {
+  background-color: goldenrod;
+
+}
+
+:root:has(.mode:checked) .nav-bar .container .fa-sun {
+    top: 30px;
+    left: 5px;
+    transition: all 0.5s;
+
+
+}
+
+
+:root:has(.mode:checked) .nav-bar .container .fa-moon {
+    top: 2px;
+    left: 2px;
+
+}
+
+:root:has(.mode:checked) .nav-bar .container {
+    background-color: #1b1a1a;
+    color: white;
+    box-shadow: 0px 0px 0px 0px rgb(54, 51, 51);
+
+}
+
+:root:has(.mode:checked) .nav-bar .container a {
+
+    color: white;
+}
+
+:root:has(.mode:checked) .nav-bar .container ::after {
+
+    background-color: gold;
+}
+
+/* :root:has(.mode:checked) .nav-bar .container ::before {
+
+     background-color: rgb(255, 255, 255);
+ } */
+
+
+:root:has(.mode:checked) #home .containere {
+    background-color: black;
+    color: white;
+}
+:root:has(.mode:checked) #home .btn-group .btn-bok-tbl {
+    background-color: goldenrod;
+    color: white;
+}
+
+:root:has(.mode:checked) #home .btn-group .icon{
+    background-color: goldenrod;
+    color: white;
+}
+:root:has(.mode:checked) #home .btn-watch {
+    
+    color: white;
+}
+
+:root:has(.mode:checked) #home  {
+
+    background-color: #000;
+}
+
+#home{
+    background-color: white;
+}
+
+
+
+
+
+.btn-group {
+    display: flex;
+    color: white;
+    text-align: center;
+    gap: 40px;
+    font-size: 10px;
+}
+
+.btn-group .btn-bok-tbl {
+    background-color: hsl(0, 84%, 44%);
+    border-radius: 0px 15px 15px 15px;
+    color: white;
+
+
+
+}
+
+.btn-group a {
+    border: none;
+    padding: 5px 20px;
+
+}
+
+
+.btn-watch {
+    position: relative;
+    color: #000;
+}
+
+/* .btn-group .icon::before {
+
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: hsl(0, 86%, 45%);
+    position: absolute;
+    background: linear-gradient(to right, rgb(108, 9, 9) 50%, transparent 50%);
+    top: 0px;
+    left: 0;
+    border-radius: 50%;
+
+} */
+
+.btn-group .icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fdfdfd;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+        top: 0;
+        left: 0;
+      
+
+
+}
+
+.fa-play {
+
+    margin-top: 4px;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#chefs {
+    padding: 50px 0px;
+}
+
+#gallery .contain h2,
+#chefs h2,
+#contact .contain h2 {
+    font-size: 10px;
+    font-weight: 500;
+    color: #585757;
+}
+
+.contain .chang-font {
+    margin: 5px 0px 20px;
+    font-family: "Amatic SC", "Inter", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+span {
+    font-family: "Amatic SC",
+        "Inter",
+        sans-serif;
+    color: hsl(0, 84%, 44%);
+}
+
+.contain {
+    padding: 0px 70px;
+    text-align: center;
+}
+
+
+.chef-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 10px;
+
+
+
+}
+
+.card {
+    width: 31%;
+    box-shadow: 0px 0px 10px 0px #ded9d98c inset;
+    font-size: 10px;
+    border-radius: 5px;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.ctr-pos {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    display: block;
+}
+
+.card .pos {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+
+
+
+
+}
+
+.pos .ctr-shape2 {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.chef-content {
+    padding: 15px;
+}
+
+.card p {
+    color: #5a5858;
+    padding-bottom: 5px;
+
+
+}
+
+.card h3 {
+    padding-bottom: 5px;
+}
+
+.card .chef-social i {
+
+    color: #918f8f;
+    font-size: 12px;
+
+}
+
+.card .chef-social i:hover {
+    color: rgba(18, 18, 18, 0.9);
+    transition: all 1s;
+
+
+}
+
+.card:hover .chef-social {
+
+    transform: translateX(200px);
+    transition: all 1s;
+}
+
+.card .chef-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(220, 208, 208, 0.6);
+    width: 25px;
+    height: 100px;
+    border-radius: 3px;
+    position: absolute;
+    top: 5%;
+    transform: translateX(300px);
+
+}
+
+
+:root:has(.mode:checked) #chefs {
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+:root:has(.mode:checked) #chefs span {
+
+    color: goldenrod;
+}
+
+:root:has(.mode:checked) #chefs .ctr-shape2 {
+    visibility: visible;
+
+
+}
+
+:root:has(.mode:checked) #chefs .card {
+    background-color: rgba(22, 22, 22, 255);
+    box-shadow: 0px 0px 0px 0px rgb(54, 51, 51);
+
+}
+
+:root:has(.mode:checked) #chefs .card p {
+    color: rgb(200, 205, 210);
+}
+
+
+
+/*gallery*/
+
+
+#gallery {
+    background-color: #efe9e9;
+    padding: 50px 0px;
+}
+
+.contain .gallery-cards {
+
+    columns: 3 250px;
+
+
+}
+
+.g-card {
+    width: 250px;
+    border: solid white 3px;
+    margin-bottom: 10px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+.g-card img {
+    width: 100%;
+    display: block;
+
+}
+
+.g-card div {
+
+    position: absolute;
+    height: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+
+
+}
+
+.g-card h2 {
+    color: white;
+    font-size: 15px;
+}
+
+
+.g-card:hover div {
+    opacity: 1;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+.g-card div p {
+
+
+    font-size: 10px;
+    padding-top: 10px;
+
+}
+
+:root:has(.mode:checked) #gallery {
+    background-color: rgb(27, 28, 30);
+    color: white;
+}
+
+:root:has(.mode:checked) span {
+    color: goldenrod;
+}
+
+#contact {
+    padding: 40px 0;
+    background-color: #f8f4f4;
+}
+
+.loc {
+    width: 100%;
+}
+
+.loc img {
+    width: 100%;
+
+}
+
+.som-contact {
+    margin: 20px 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: start;
+    row-gap: 10px;
+    padding: 10px 0px;
+
+
+}
+
+.som-contact .edit {
+    background-color: rgb(239, 237, 237);
+    width: 49%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 10px;
+    position: relative;
+
+}
+
+.som-contact .edit h3 {
+    font-size: 15px;
+    color: #9e9a9a;
+}
+
+.som-contact .edit h3,
+.som-contact .edit p {
+    padding-bottom: 5px;
+}
+
+.icons {
+    padding: 20px;
+
+}
+
+.icons i {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    color: white;
+    font-size: 12px;
+}
+
+.icons::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: hsl(0, 84%, 44%);
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.edit a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+#contact form {
+
+    padding: 10px;
+    background-color: white;
+
+
+}
+
+#contact form div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#contact form div input {
+    width: 49.5%;
+
+}
+
+#contact form input {
+    width: 100%;
+    padding: 15px 5px;
+    margin-bottom: 15px;
+    font-size: 9px;
+    border-radius: 0;
+    border: solid 1px lightgray;
+}
+
+#contact form textarea {
+    width: 100%;
+
+    margin-bottom: 15px;
+    border-radius: 0%;
+    resize: vertical;
+    min-height: 100px;
+    max-height: 100px;
+    border: solid 1px lightgray;
+
+}
+
+#contact form .btn-form {
+    color: white;
+    background-color: hsl(0, 84%, 44%);
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 10px;
+    font-weight: 100;
+
+}
+
+
+
+:root:has(.mode:checked) #contact .icons i {
+    background-color: goldenrod;
+color: #000;
+}
+
+:root:has(.mode:checked) #contact .icons::before {
+    background-color: goldenrod;
+    
+}
+
+:root:has(.mode:checked) #contact form .btn-form {
+    background-color:rgb(180, 107, 12);
+    color: black;
+}
+:root:has(.mode:checked) #contact .edit {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}:root:has(.mode:checked) #contact .edit a{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+:root:has(.mode:checked) #contact form {
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+:root:has(.mode:checked) #contact {
+    background-color: rgb(24, 22, 22);
+    color: white;
+}
+
+
+
+.footer {
+    padding: 20px 0px;
+    background-image: url(../image/textured-metal-background.jpg);
+    background-size: cover;
+    color: white;
+}
+.footer .contain {
+    display: flex;
+    column-gap: 15px;
+}
+
+.footer .about  {
+    width: 25%;
+}
+
+
+.footer .about  , .footer .subscription{
+    text-align: start;
+}
+
+.footer .about img {
+    width: 25px;
+}
+
+.footer .about ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+.footer .about a {
+   color: white;
+
+}
+
+.footer .about p ,.footer .subscription p {
+    font-size: 11px;
+    padding-bottom:5px ;
+}
+
+.logoo {
+    position: relative;
+}
+
+.about div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 0px;
+    font-size: 13px;
+}
+
+.about h5 {
+    text-align: center;
+    padding: 5px 0px;
+    border-bottom: solid gray 1px;
+}
+.footer .subscription{
+    width: 50%;
+
+}
+.footer .subscription h5{
+padding: 5px 0px;
+}
+.footer .subscription-group input{
+    width: 81%;
+    padding:8px 5px;
+    font-size: 10px;
+    border: none;
+}
+.footer .subscription-group  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    font-size: 5px;
+}
+.footer .subscription-group button {
+    width: 18%;
+    padding: 5px;
+    font-size: 10px;
+    background-color:hsl(0, 84%, 44%) ;
+    border: none;
+    color: white;
+   transition: all 1s; 
+}
+.footer .subscription-group button:hover{
+    background-color: hsl(11, 89%, 52%);
+}
+.footer .quick-links{
+    padding-top: 15px;
+}
+.footer .quick-links ul{
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+}
+.footer .quick-links li {
+    width: 48%;
+    font-size: 11px;
+    padding: 5px 0px;
+}
+
+.footer .quick-links a {
+    text-decoration: none;
+    color: white;
+    transition: all 1s;
+    
+}
+.footer .quick-links li::before{
+    content: ">";
+    padding: 5px;
+}
+
+.footer .quick-links li:hover a{
+    background-color: rgba(223, 220, 219, 0.6);
+  
+}
+
+.contact-details{
+    width: 25%;
+    text-align: start ;
+    padding: 10px 0px;
+
+}
+.contact-details li{
+    list-style: none;
+    padding: 5px;
+    font-size: 13px;
+}
+.contact-details a{
+    text-decoration: none;
+    color: white;
+}
+.contact-details i{
+    color: hsl(0, 84%, 44%);
+    padding-right: 5px;
+}
+:root:has(.mode:checked) .footer {
+    background-color: rgb(24, 22, 22);
+    color: white;
+}
+
+:root:has(.mode:checked) .footer .contact-details i {
+    background-color: rgb(24, 22, 22);
+    color: goldenrod;
+}
+
+
+:root:has(.mode:checked) .footer .subscription button {
+    background-color: goldenrod;
+    color: black;
+}
+:root:has(.mode:checked) .footer div .logoo::after {
+    background-color: goldenrod;
+}
